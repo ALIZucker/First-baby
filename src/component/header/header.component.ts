@@ -14,7 +14,7 @@ import {RouterLink} from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
 
-  listmenuItems: string[] = ['Best Sellers', 'New arrivals', 'New Born', 'Branded', 'Our Choice']
+  listmenuItems: string[] = ['Home', 'New arrivals', 'New Born', 'Branded', 'Our Choice']
 
   ngOnInit(): void {
 
@@ -27,6 +27,7 @@ export class HeaderComponent implements OnInit {
       return true;
     }
   }
+
   searchBoxItems($event: Event): void {
 
     console.log(($event.target as HTMLInputElement).value);

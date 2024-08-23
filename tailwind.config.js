@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor:{
-        'spanColor':'#6a6e5e'
+        'spanColor':'#6a6e5e',
+        'footColor':'#525f6e',
       }
     },
   },
