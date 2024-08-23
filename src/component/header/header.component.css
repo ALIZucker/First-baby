@@ -1,0 +1,45 @@
+.image-lego {
+  width: 19vw;
+  height: 11.67vh;
+  object-fit: cover;
+  margin-top: 4vh;
+  margin-left: 6.5vw;
+}
+
+.listmenu {
+  align-content: center;
+  flex-grow: 0.5;
+}
+
+.listmenu ul {
+  display: flex;
+  margin-left: 6.5vw;
+  flex-direction: row;
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1e211c;
+  gap: 3vw;
+}
+
+.searchmenu {
+  flex-grow: 2;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5vw;
+  align-items: center;
+}
+
+.searchmenu img {
+  width: 1.7vw;
+  height: 3.8vh;
+}
+.searchmenu input{
+outline: none;
+  font-size: 1.1vw;
+}
+.searchmenu input:focus{
+  border-bottom: #1e211c 1px solid;
+}
