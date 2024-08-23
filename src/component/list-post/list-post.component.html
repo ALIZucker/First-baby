@@ -1,0 +1,16 @@
+<div class="flex flex-col w-full ">
+  <h2 class="my-[11.05vh] mx-[10.02vw] text-[4vw]">{{ title }}</h2>
+  <div class="w-auto h-[64.98vh]  flex flex-row justify-around mx-[8.02vw]" *ngIf="dataPost.length>0">
+    @for (item of dataPost; track $index) {
+      <section class="h-[62.98vh] w-[18.30vw]  shaddow">
+        <img [src]="item.image" class="w-full h-[38.09vh] object-center">
+        <h2 class="mt-[5.2vh] text-[1.6vw] px-[1vw] font-semibold capitalize">{{ item.title }}</h2>
+        <section class="flex-row flex justify-between mt-[6.98vh] px-[1vw]">
+          <p class="text-[1.4vw]"><span>{{ item.price }}</span>S</p>
+          <button class="text-[1.4vw]">add to Cart</button>
+        </section>
+      </section>
+    }
+
+  </div>
+</div>

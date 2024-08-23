@@ -21,6 +21,10 @@
   color: #1e211c;
   gap: 3vw;
 }
+.listmenu ul li:hover{
+  cursor: pointer;
+  color: #959595;
+}
 
 .searchmenu {
   flex-grow: 2;

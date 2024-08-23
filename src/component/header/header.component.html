@@ -4,7 +4,12 @@
     <section class="listmenu">
       <ul *ngIf="isempty() ">
         @for (item of listmenuItems; track $index) {
-          <li>{{ item }}</li>
+          @if (item=='Branded'){
+            <li><a routerLink="new">{{item}}</a></li>
+          } @else {
+            <li>{{ item }}</li>
+          }
+
         }
       </ul>
     </section>
